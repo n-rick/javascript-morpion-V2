@@ -9,27 +9,38 @@
 </head>
 
 <body>
-    <img src="img/vide.png" alt="" class="image" id="1" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <img src="img/vide.png" alt="" class="image" id="2" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <img src="img/vide.png" alt="" class="image" id="3" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <br>
-    <img src="img/vide.png" alt="" class="image" id="4" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <img src="img/vide.png" alt="" class="image" id="5" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <img src="img/vide.png" alt="" class="image" id="6" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <br>
-    <img src="img/vide.png" alt="" class="image" id="7" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <img src="img/vide.png" alt="" class="image" id="8" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <img src="img/vide.png" alt="" class="image" id="9" style="border:2px solid black;" height="100px" width="100px"
-        onclick="clic(this.id);">
-    <br>
+    <main id=game>
+        <div>
+            <h1>Jeu du Morpion</h1>
+        </div>
+        <div>
+            <h2 id=joueur></h2>
+        </div>
+        <div class="info">
+            <p id="score"></p>
+        </div>
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="1" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="2" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="3" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <br>
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="4" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="5" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="6" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <br>
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="7" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="8" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <img class="image" src="images/vide.png" alt="tic tac toe choix" id="9" style="border:2px solid black;"
+            height="200px" width="200px" onclick="joue(this.id);">
+        <br>
+    </main>
     <script src="js/game.js"></script>
 </body>
 
