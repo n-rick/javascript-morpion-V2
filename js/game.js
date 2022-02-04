@@ -3,7 +3,7 @@ var nbDeCoups = 0;
 
 function verifier(a, b, c) {
     'use strict';
-    return ((document.getElementById(a).src == document.getElementById(b).src) && (document.getElementById(b).src == document.getElementById(c).src)) && (document.getElementById(a).src.indexOf("../images/vide.png") == -1);
+    return ((document.getElementById(a).src == document.getElementById(b).src) && (document.getElementById(b).src == document.getElementById(c).src)) && (document.getElementById(a).src.indexOf("./images/vide.png") == -1);
 }
 function gagnant() {
     'use strict';
@@ -20,13 +20,13 @@ function gagnant() {
 function joue(n) {
     'use strict';
     let myImg = document.getElementById(n);
-    if (myImg.src.indexOf("../images/vide.png") != -1) {
+    if (myImg.src.indexOf("./images/vide.png") != -1) {
         nbDeCoups++;
         if (nbDeCoups % 2 == 0) {
-            myImg.src = "../images/croix.png";
+            myImg.src = "./images/croix.png";
         }
         else {
-            myImg.scr = "../images/rond.png";
+            myImg.scr = "./images/rond.png";
         }
     }
     else {
